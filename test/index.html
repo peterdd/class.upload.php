@@ -60,7 +60,7 @@
         <legend>Simple upload</legend>
         <p>Pick up a file to upload, and press "upload" </p>
         <form name="form1" enctype="multipart/form-data" method="post" action="upload.php" />
-            <p><input type="file" size="32" name="my_field" value="" /></p>
+            <p><input type="file" name="my_field" value="" /></p>
             <p class="button"><input type="hidden" name="action" value="simple" />
             <input type="submit" name="Submit" value="upload" /></p>
         </form>
@@ -70,7 +70,7 @@
         <legend>Image upload</legend>
         <p>Pick up an image to upload, and press "upload" </p>
         <form name="form2" enctype="multipart/form-data" method="post" action="upload.php" />
-            <p><input type="file" size="32" name="my_field" value="" /></p>
+            <p><input type="file" name="my_field" value="" /></p>
             <p class="button"><input type="hidden" name="action" value="image" />
             <input type="submit" name="Submit" value="upload" /></p>
         </form>
@@ -80,7 +80,7 @@
         <legend>XMLHttpRequest upload</legend>
         <p>Pick up one file to upload, and press "upload" </p>
         <form name="form5" enctype="multipart/form-data" method="post" action="upload.php" />
-            <p><input type="file" size="32" name="my_field" value="" id="xhr_field" /></p>
+            <p><input type="file" name="my_field" value="" id="xhr_field" /></p>
             <div id="xhr_status"></div>
             <p class="button"><input type="hidden" name="action" value="xhr" />
             <input type="submit" name="Submit" value="upload" id="xhr_upload"/></p>
@@ -92,7 +92,7 @@
         <legend>HTML5 File Drag &amp; Drop API</legend>
         <p>Drag and drop one file to upload, and press "upload" </p>
         <form name="form5" enctype="multipart/form-data" method="post" action="upload.php" />
-            <p><input type="file" size="32" name="my_field" value="" id="dnd_field" /></p>
+            <p><input type="file" name="my_field" value="" id="dnd_field" /></p>
             <div id="dnd_drag">... drag and drop here ...</div>
             <div id="dnd_status"></div>
             <p class="button"><input type="hidden" name="action" value="xhr" />
@@ -138,7 +138,7 @@
         <legend>Base64-encoded image data</legend>
         <p>Copy here base64-encoded file data, and press "process" </p>
         <form name="form6" enctype="multipart/form-data" method="post" action="upload.php" />
-            <p><textarea cols="32" name="my_field">base64:iVBORw0KGgoAAAANSUhEUgAAACUAAAARCAYAAABadWW4AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAC4jAAAuIwF4pT92AAAAB3RJTUUH4AoBFik0VcV6egAAALpJREFUSMftlk0KwyAUhMfSTRDP4ybkFgGPqSRHUvAW001TWpqnFgykkIG3iT/fqGNQkSROphtOqJcppdRHGWMwTRPWdf0atPWRJLU3M/gUALFCCHzX9l2S1N7KgDRRjJHzPBMArbVdTdUYKE2UcyYADsNwiCmJUQx6KTe9tMuQVpFSonOueHy1qu2UxGgKuve+q6kaQzSlteY4jlyWpTkzv94+iXHfOc7Dc1RjnPuPfpn6R1Pqero06gEPaFNPl21bvgAAAABJRU5ErkJggg==</textarea></p>
+            <p><textarea cols="32" rows="10" name="my_field">base64:iVBORw0KGgoAAAANSUhEUgAAACUAAAARCAYAAABadWW4AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAC4jAAAuIwF4pT92AAAAB3RJTUUH4AoBFik0VcV6egAAALpJREFUSMftlk0KwyAUhMfSTRDP4ybkFgGPqSRHUvAW001TWpqnFgykkIG3iT/fqGNQkSROphtOqJcppdRHGWMwTRPWdf0atPWRJLU3M/gUALFCCHzX9l2S1N7KgDRRjJHzPBMArbVdTdUYKE2UcyYADsNwiCmJUQx6KTe9tMuQVpFSonOueHy1qu2UxGgKuve+q6kaQzSlteY4jlyWpTkzv94+iXHfOc7Dc1RjnPuPfpn6R1Pqero06gEPaFNPl21bvgAAAABJRU5ErkJggg==</textarea></p>
             <p class="button"><input type="hidden" name="action" value="base64" />
             <input type="submit" name="Submit" value="process" /></p>
         </form>
